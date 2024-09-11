@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: aqua;
+    border-radius: 40px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  background-image: url('./assets/inicio/header-icon.webp'); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+main {
+  display: flex;
+  width: 400vw;
+  overflow-y: hidden;
+  background-color: aqua;
+
+}
+
+
+.content-container {
+  width: 24.8%;
+  height: 102vh;
+  background-color: #708090;
+  padding: 15px 15px 15px 15px;
+  box-sizing: border-box;
+  
+}
+
+.inicio{
+  background-image: url('./assets/imagens-plano-fundo/background-INICIO.png');
+  height: 85%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  margin-top: 150px;
+}
+.curriculum {
+  background-image: url('./assets/imagens-plano-fundo/7278150-fundo-escuro-abstrato-com-efeito-claro-vetor.jpg');
+  height: 85%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  margin-top: 150px;
+  
+}
+.projetos {
+  background-image: url('./assets/imagens-plano-fundo/backgroun-CURRICULUM.webp');
+  height: 85%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  margin-top: 150px;
+}
+.contato {
+  background-image: url('./assets/imagens-plano-fundo/background-CONTATO.jpg');
+  height: 85%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  margin-top: 150px;
+}
