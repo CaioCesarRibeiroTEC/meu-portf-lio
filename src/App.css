@@ -62,7 +62,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 10px 10px 10px 10px; 
   box-sizing: border-box; 
 
@@ -74,7 +74,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 10px 10px 10px 10px; 
   box-sizing: border-box; 
 
@@ -86,7 +86,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 10px 10px 10px 10px; 
   box-sizing: border-box; 
 }
@@ -97,7 +97,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 10px 10px 10px 10px; 
   box-sizing: border-box; 
 }

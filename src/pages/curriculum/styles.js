@@ -20,8 +20,9 @@ export const Curriculumcontent = styled.div`
     overflow-x: hidden;
 
     @media (max-width: 750px) { 
-        width: 97%;
-        margin-top: -10px;
+        width: 98%;
+        margin-top: -5px;
+        margin-left: -5px;
     }
 
 `;
@@ -38,7 +39,7 @@ export const MySkillsContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     border: 1px solid gold;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow-x: hidden;
     
 `;
@@ -60,6 +61,7 @@ export const MySkills = styled.ul`
     justify-content: space-around;
     width: 100%;
     height: 100%;
+    margin-left: -35px;
 `;
 
 export const MySkillsLi = styled.li`
@@ -71,7 +73,7 @@ export const MySkillsLi = styled.li`
 
     @media (max-width: 750px) { 
         font-size: 12px;
-        margin-top: 2px;
+        margin-top: 3px;
     }
 `;
 
@@ -90,7 +92,7 @@ export const MyQualificationsContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     border: 1px solid gold;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow-x: hidden;
 `;
 
@@ -110,7 +112,7 @@ export const MyQualifications = styled.ul`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    
+    margin-left: -35px;
 `;
 
 export const MyQualificationsLi = styled.li`
@@ -122,7 +124,7 @@ export const MyQualificationsLi = styled.li`
 
     @media (max-width: 750px) { 
         font-size: 14px;
-        margin-top: 2px;
+        margin-top: 3px;
     }
 `;
 
@@ -140,7 +142,7 @@ export const MyExperiencesContainer = styled.div`
     flex-direction: column;
     align-items: center;
     border: 1px solid gold;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow-x: hidden;
 `;
 
@@ -163,7 +165,7 @@ export const MyExperiences = styled.ul`
 
     @media (max-width: 750px) { 
         margin-left: -15px
-
+        
     }
 `;
 
@@ -180,7 +182,7 @@ export const ExperiencesLi = styled.li`
 
     @media (max-width: 750px) { 
         font-size: 13px;
-        margin-top: 2px;
+        margin-top: 3px;
 
     }
 `;

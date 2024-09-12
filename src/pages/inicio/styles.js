@@ -110,6 +110,7 @@ export const ProfileButtonContainer = styled.div`
 export const ProfileButton = styled.button`
     text-decoration: none;
     border-radius: 20px;
+    cursor: pointer;
 
 `;
 

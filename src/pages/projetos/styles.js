@@ -13,13 +13,13 @@ export const ProjetosContainer = styled.div`
 `;
 
 export const ProjetosTitle = styled.h1`
-  margin: 15px;
+  margin-top: 45px;
   color: crimson;
   font-family: "Baskervville SC", system-ui;
-
+  background-color: black;
+  border-radius: 10px;
   @media (max-width: 1050px) { 
     font-size: 20px;
-    background-color: black
   }
 `;
 
