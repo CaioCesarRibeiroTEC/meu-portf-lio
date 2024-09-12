@@ -24,14 +24,16 @@ export const ProfileCertificado = styled.div`
     z-index: 1;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     visibility: ${({modal}) => modal?  'visible' : 'hidden'};  
 
 `;
 
 export const CertificadoCard = styled.img`
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 `;
 
 export const ProfileContainer = styled.div`
