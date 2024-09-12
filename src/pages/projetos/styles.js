@@ -24,74 +24,44 @@ export const ProjetosTitle = styled.h1`
 
 export const MeusProjetosContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
 
-
-  @media (max-width: 1050px) { 
-    flex-direction: column;
-    height: 80%;
-  }
-
-  @media (max-width: 440px) { 
-    height: 70%;
-  }
-
-  @media (max-width: 300px) { 
-    height: 65%;
-  }
 `;
 
 export const Projeto = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 5px;
 
-  @media (max-width: 1050px) { 
-    width: 100%;
+  div {
+    width: 80%;
     height: 100%;
-  }
-
-  @media (max-width: 440px) { 
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center
   }
+
 `;
 
 export const ProjetoCard = styled.div`
-  width: 250px;
-  height: 550px;
+  height: 100%;
   border-radius: 20px;
   border: 1px solid gold;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 400px 650px;
+  background-size: 100% 100%;
   padding: 15px;
   box-sizing: border-box;
   display: flex;
   align-items: end;
   cursor: pointer;
-
-  @media (max-width: 1050px) { 
-    background-size: 450px;
-    width: 300px;
-    height: 200px;
-  }
-
-  @media (max-width: 650px) { 
-    width: 200px;
-    height: 200px;
-    background-size: 300px;
-  }
-
-  @media (max-width: 440px) { 
-    width: 200px;
-    height: 90px;
-    background-size: 200px;
-  }
-
 
 `;
 
@@ -100,14 +70,10 @@ export const MeusProjetosH4 = styled.h4`
   background-color: black;
   font-family: "Baskervville SC", system-ui;
   border-radius: 10px;
-  width: 250px;
-  height: 50px;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 0 10px 10px 10px;
+  box-sizing: border-box;
 
-  @media (max-width: 650px) { 
-    width: 200px;
-    height: 60px;
-  }
 `;
 
 export const ModalContainer = styled.div`

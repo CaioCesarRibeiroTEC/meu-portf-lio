@@ -1,11 +1,9 @@
 .arrows-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
    
-    @media (max-width: 480px) { 
-       flex-direction: column;
-    }
    
    }
    
@@ -57,11 +55,7 @@
        animation-delay:  0s;
        -webkit-animation-delay:  0s;
    }
-   
-   @media (max-width: 580px) { 
-   
-   }
-   
+     
    
    @media (max-width: 350px) { 
        .arrows-container {

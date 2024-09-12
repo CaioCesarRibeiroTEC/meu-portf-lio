@@ -1,16 +1,8 @@
-import { useState } from "react";
-import { HeaderA, HeaderContaine, HeaderNav, HeaderUl, LiContato, LiCurriculum, LiInicio, LiProjetos } from "./styles";
+import {HeaderContaine, HeaderLi, HeaderNav, HeaderUl } from "./styles";
 
 
 
 function HeaderComponent() {
-    const [inicioPage, setInicioPage] = useState(false);
-    const [curriculumPage, setCurriculumPage] = useState(false);
-    const [projetosPage, setProjetosPage] = useState(false);
-    const [contatoPage, setContatoPage] = useState(false);
-
-
-
 
 
     const Menu = document.querySelector('.nav-menu')
@@ -23,15 +15,6 @@ function HeaderComponent() {
 
 
 
-    function closePage() {
-        setInicioPage(false)
-        setCurriculumPage(false)
-        setProjetosPage(false)
-        setContatoPage(false)
-    }
-
-
-
     return(
         <HeaderContaine>
 
@@ -39,21 +22,34 @@ function HeaderComponent() {
                 
                 <HeaderUl className="nav-menu">
 
-                    <HeaderA href="#inicio">
-                        <LiInicio inicioPage={inicioPage} onClick={() => setInicioPage(!inicioPage)}><b style={{backgroundColor:'black'}} onClick={() => closePage()}>Início</b></LiInicio>
-                    </HeaderA>
+                    <HeaderLi >
+                        <b>
+                            <a href="#inicio">Início</a> 
+                        </b>
 
-                    <HeaderA href="#curriculum">
-                        <LiCurriculum  curriculumPage={curriculumPage} onClick={() => setCurriculumPage(!curriculumPage)} ><b style={{backgroundColor:'black'}} onClick={() => closePage()}>Curriculum</b></LiCurriculum>
-                    </HeaderA>
+                    </HeaderLi>
 
-                    <HeaderA href="#projetos">
-                        <LiProjetos  projetosPage={projetosPage} onClick={() => setProjetosPage(!projetosPage)} ><b style={{backgroundColor:'black' }} onClick={() => closePage()}>Projetos</b></LiProjetos>
-                    </HeaderA>
+                    <HeaderLi>
+                        <b>
+                            <a href="#curriculum">Competências</a>
+                        </b>
 
-                    <HeaderA href="#contato">
-                        <LiContato  contatoPage={contatoPage} onClick={() => setContatoPage(!contatoPage)}><b style={{backgroundColor:'black'}} onClick={() => closePage()} >Contato</b></LiContato>
-                    </HeaderA>
+                    </HeaderLi>
+
+
+                    <HeaderLi>
+                        <b>
+                            <a href="#projetos">Projetos</a>
+                        </b>
+
+                    </HeaderLi>
+
+                    <HeaderLi>
+                        <b>
+                            <a href="#contato">Contato</a>
+                        </b>
+
+                    </HeaderLi>
 
                 </HeaderUl>
             </HeaderNav>

@@ -34,22 +34,22 @@ function ProjetosComponent() {
             <MeusProjetosContainer>
 
                 <Projeto>
-                    <div>
+                    <div style={{width: '100%'}}>
                         <ProjetoCard onClick={() => setModalYt(!modalYt)} style={{backgroundImage: `url(${youTubeImg})`}}>
 
                         </ProjetoCard>
                         <MeusProjetosH4>
-                            projeto full-stack clone da <br/>
+                            projeto full-stack clone da 
                             interface do you-tube
                         </MeusProjetosH4>
                     </div>
 
-                    <div>
+                    <div style={{width: '100%'}}>
                         <ProjetoCard onClick={() => setModalWhats(!modalWhats)} style={{backgroundImage: `url(${watsImg})`}}>
 
                         </ProjetoCard>
                         <MeusProjetosH4>
-                            projeto chat full-stack<br/>
+                            projeto chat full-stack
                             com socket-io
                         </MeusProjetosH4>
                     </div>
@@ -57,22 +57,22 @@ function ProjetosComponent() {
 
                 <Projeto>
 
-                    <div>
+                    <div style={{width: '100%'}}>
                         <ProjetoCard onClick={() => setModalSt(!modalSt)} style={{backgroundImage: `url(${starImg})`}}>
 
                         </ProjetoCard>
                         <MeusProjetosH4>
-                            Projeto da Api<br/>
+                            Projeto da Api
                             do star-Wars-Charactres
                         </MeusProjetosH4>
 
                     </div>
-                    <div>
+                    <div style={{width: '100%'}}>
                         <ProjetoCard onClick={() => setModalBat(!modalBat)} style={{backgroundImage: `url(${batImg})`}}>
 
                         </ProjetoCard>
                         <MeusProjetosH4>
-                            Projeto de simulação de compra de <br/>
+                            simulação de compra de
                             ingresso do filme
                             The Batman 2022
                         </MeusProjetosH4>
@@ -89,20 +89,20 @@ function ProjetosComponent() {
                 <ModalYt modalYt={modalYt} onClick={() => setModalYt(!modalYt)}>
                     <ModalVideosYtContainer>
                         <div>
-                            <video controls autoPlay >
+                            <video controls  >
                                 <source src={youTubeVideo1} type='video/mp4' />
                             </video>
 
-                            <video controls autoPlay >
+                            <video controls  >
                                 <source src={youTubeVideo2} type='video/mp4' />
                             </video>
                         </div>
                         <div>
-                            <video controls autoPlay >
+                            <video controls  >
                                 <source src={youTubeVideo3} type='video/mp4' />
                             </video>
 
-                            <video controls autoPlay >
+                            <video controls  >
                                 <source src={youTubeVideo4} type='video/mp4' />
                             </video>
 
@@ -134,7 +134,7 @@ function ProjetosComponent() {
                 <ModalWhats modalWhats={modalWhats} onClick={() => setModalWhats(!modalWhats)}>
                     <ModalVideosContainer>
 
-                        <video controls autoPlay >
+                        <video controls  >
                             <source src={watsVideo} type='video/mp4' />
                         </video>
                         <ProjectDescripition>
@@ -158,7 +158,7 @@ function ProjetosComponent() {
                 <ModalStar modalSt={modalSt} onClick={() => setModalSt(!modalSt)}>
                     <ModalVideosContainer>
 
-                        <video controls autoPlay >
+                        <video controls  >
                             <source src={starVideo} type='video/mp4' />
                         </video>
                         <ProjectDescripition>
@@ -182,7 +182,7 @@ function ProjetosComponent() {
                 <ModalBat modalBat={modalBat} onClick={() => setModalBat(!modalBat)}>
                     <ModalVideosContainer>
 
-                        <video controls autoPlay >
+                        <video controls  >
                             <source src={batVideo} type='video/mp4' />
                         </video>
 

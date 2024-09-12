@@ -3,6 +3,7 @@
   scroll-behavior: smooth;
   overflow-y: hidden;
   
+  
   ::-webkit-scrollbar {
     width: 10px;
     background-color: #000;
@@ -15,74 +16,88 @@
   }
 }
 
-.header {
-  width: 100%;
-  height: 15%;
-  position: fixed;
-  background-image: url('./assets/inicio/header-icon.webp'); 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.portifolio-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
 
 }
 
-main {
+.header {
+  width: 100%;
+  height: 100px;
+  background-image: url('./assets/inicio/header-icon.webp'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.main {
   display: flex;
   width: 400vw;
+  height: 100%;
   overflow-y: hidden;
-  background-color: aqua;
-
+  background-color: #708090;
+  scroll-behavior: smooth;
+  margin-top: 100px;
 }
 
 
 .content-container {
-  width: 24.8%;
-  height: 102vh;
+  width: 100%;
+  height: 100%;
   background-color: #708090;
-  padding: 15px 15px 15px 15px;
-  box-sizing: border-box;
-  
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px; 
+  box-sizing: border-box; 
 }
 
 .inicio{
   background-image: url('./assets/imagens-plano-fundo/background-INICIO.png');
-  height: 85%;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  margin-top: 150px;
+  padding: 10px 10px 10px 10px; 
+  box-sizing: border-box; 
+
 }
 .curriculum {
   background-image: url('./assets/imagens-plano-fundo/7278150-fundo-escuro-abstrato-com-efeito-claro-vetor.jpg');
-  height: 85%;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  margin-top: 150px;
-  
+  padding: 10px 10px 10px 10px; 
+  box-sizing: border-box; 
+
 }
 .projetos {
   background-image: url('./assets/imagens-plano-fundo/backgroun-CURRICULUM.webp');
-  height: 85%;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  margin-top: 150px;
+  padding: 10px 10px 10px 10px; 
+  box-sizing: border-box; 
 }
 .contato {
   background-image: url('./assets/imagens-plano-fundo/background-CONTATO.jpg');
-  height: 85%;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  margin-top: 150px;
+  padding: 10px 10px 10px 10px; 
+  box-sizing: border-box; 
 }

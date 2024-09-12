@@ -7,61 +7,75 @@ export const InicioContainer = styled.div`
     height:100%;
     display: flex; 
     flex-direction: column;
-     
-`;
+    align-items: center;
+    justify-content: center;
+    
+    `;
+    
+    export const ProfileCertificado = styled.div`
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.5);
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      visibility: ${({modal}) => modal?  'visible' : 'hidden'};  
+    
+    `;
+    
+    export const CertificadoCard = styled.img`
+    
+    `;
 
 export const ProfileContainer = styled.div`
-    height: 500px;
+    width: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('./assets/648551.webp'); 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow-y: hidden;
-    margin-top: 15px;
+
+    @media (max-width: 480px) { 
+        height: 450px;
+    }
 `;
 
 export const ProfileContent = styled.div`
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    @media (max-width: 600px) { 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+
+    @media (max-width: 560px) { 
+        width: 75%;
     }
 
-    @media (max-width: 350px) { 
-        display: flex;
+    @media (max-width: 480px) { 
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 `;
 
 export const ProfileCard = styled.div`
-    width: 550px;
+    width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-    color: aqua;
     font-size: 25px;
 
-
-    @media (max-width: 600px) { 
-        width: 40%
-    }
-
-    @media (max-width: 350px) { 
-        width: 80%;
-        height: 600px;
+    div {
+        
     }
 `;
 
@@ -80,100 +94,87 @@ export const ProfileMyName = styled.span`
   color:gold;
   border-radius: 5px;
 
-    @media (max-width: 350px) { 
-        height: 80px;
-        font-size: 20px;
-    }
+  @media (max-width: 480px) { 
+    font-size: 20px;
+  }
+
 `;
 
-export const ProfileText = styled.span`
+export const ProfileButtonContainer = styled.div`
+
+
+`;
+
+export const ProfileButton = styled.button`
+    text-decoration: none;
+    border-radius: 20px;
+
+`;
+
+
+
+export const ProfileText = styled.h2`
   font-family: "Baskervville SC", system-ui;
   text-align: center;
   font-size: 16px;
   background-color:#000;
   color:gold;
   border-radius: 5px;
+  padding: 3px;
 
 `;
 
 
 export const InicioH1 = styled.h1`
-    padding: 10px;
     font-family: "Baskervville SC", system-ui;
     color:gold;
-    font-size: 50px;
-    width: 500px;
+    font-size: 30px;
+    background-color:black;
+    border-radius: 15px;
 
-    @media (max-width: 780px) { 
-        font-size: 30px;
-        width: 300px;
-        height: 250px;
+    @media (max-width: 480px) { 
+        font-size: 20px;
+        padding: 3px;
     }
+    
 
-    @media (max-width: 580px) { 
-        font-size: 25px;
-        width: 200px;
-        height: 100px;
-    }
-
-    @media (max-width: 350px) { 
-        width: 200px;
-    }
 `;
 
 export const SocialMediaContainer = styled.div`
-    width: 100%;
-    height: 200px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
-    @media (max-width: 600px) { 
-        display: flex;
-        flex-direction: column;
-        height: 400px;
-        font-size: 20px;
-        width: 50%;
+    @media (max-width: 480px) { 
+        flex-direction: row;
     }
 
-    @media (max-width: 350px) { 
-        display: flex;
-        width: 100%;
-        height: 500px;
-    }
 `;
 
 export const SocialMediaA = styled.a`
     display: flex;
     flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: aqua;
     
 
     b{
         background-color: black;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
     }
 
-    @media (max-width: 350px) { 
-
-        margin-top: 10px;
-        width: 200px;
-        
-
-        b{
-            font-size: 16px;
-        }
-    }
 `;
 
 export const SocialMediaImg = styled.img`
-    width: 80px;
-    height: 70px;
+    width: 60px;
+    height: 40px;
     border-radius: 50%;
     border: 4px solid gold;
     cursor:pointer;
-
-    @media (max-width: 350px) { 
-        width: 60px;
-        height: 30px;
-    }
+    margin-top: 15px;
 `;

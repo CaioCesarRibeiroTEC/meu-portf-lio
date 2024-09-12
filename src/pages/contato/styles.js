@@ -12,10 +12,7 @@ export const FormTitle = styled.h1`
     color: aqua;
     display: flex;
     flex-direction: column;
-
-    @media (max-width: 400px) { 
     font-size: 20px;
-   }
 `;
 
 export const FormContent = styled.div`
@@ -32,7 +29,7 @@ export const Form = styled.form`
 export const FormLabel = styled.label`
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
 `;
 
 export const FormB = styled.b`
@@ -40,11 +37,8 @@ export const FormB = styled.b`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
-
-  @media (max-width: 400px) { 
-    font-size: 20px;
-   }
+  font-size: 18px;
+    
 `;
 
 export const FormInput = styled.input`
@@ -62,7 +56,7 @@ export const FormInput = styled.input`
 export const FormTextarea = styled.textarea`
     display: block;
     width: 500px;
-    height: 200px;
+    height: 100px;
     border-radius: 5px;
 
     @media (max-width: 550px) { 
