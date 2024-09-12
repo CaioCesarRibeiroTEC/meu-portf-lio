@@ -6,6 +6,7 @@ export const FormContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 `;
 
 export const FormTitle = styled.h1`
@@ -24,6 +25,7 @@ export const Form = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 `;
 
 export const FormLabel = styled.label`
@@ -37,8 +39,7 @@ export const FormB = styled.b`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-    
+  font-size: 18px;  
 `;
 
 export const FormInput = styled.input`

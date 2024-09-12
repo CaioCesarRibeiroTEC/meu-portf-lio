@@ -6,8 +6,7 @@ function ForComponent() {
 
         <FormContainer>
             <FormTitle>
-                <b>Entre em contato <br/> e </b>
-                <b>Vamos conversar</b> 
+                <b>Entre em contato </b> 
             </FormTitle>
 
             <FormContent>

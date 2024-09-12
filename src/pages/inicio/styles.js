@@ -9,30 +9,30 @@ export const InicioContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    `;
-    
-    export const ProfileCertificado = styled.div`
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0,0,0,0.5);
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 1;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      visibility: ${({modal}) => modal?  'visible' : 'hidden'};  
-    
-    `;
-    
-    export const CertificadoCard = styled.img`
-    
-    `;
+    overflow-x: hidden;
+`;
+
+export const ProfileCertificado = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: ${({modal}) => modal?  'visible' : 'hidden'};  
+
+`;
+
+export const CertificadoCard = styled.img`
+
+`;
 
 export const ProfileContainer = styled.div`
     width: 600px;

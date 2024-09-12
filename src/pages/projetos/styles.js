@@ -9,6 +9,7 @@ export const ProjetosContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 `;
 
 export const ProjetosTitle = styled.h1`
