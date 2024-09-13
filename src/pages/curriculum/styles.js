@@ -182,7 +182,7 @@ export const ExperiencesLi = styled.li`
 
     @media (max-width: 750px) { 
         font-size: 13px;
-        margin-top: 3px;
+        margin-top: 2px;
 
     }
 `;

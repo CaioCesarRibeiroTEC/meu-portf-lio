@@ -75,10 +75,6 @@ export const ProfileCard = styled.div`
     align-items: center;
     row-gap: 20px;
     font-size: 25px;
-
-    div {
-        
-    }
 `;
 
 export const ProfileImg = styled.img`
